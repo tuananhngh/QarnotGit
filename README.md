@@ -8,8 +8,8 @@ Feature "light" is interpolated to get rid of NaN. Some instances are deleted in
 The training procedure is as follow : 
 * Data is fed to model by chunk's order
 * For each chunk :
-  *   Divide the data by to train and validation by cutoff value (weekly) (function : testcutoff())
-  *   A standard scaler is applied to train data 
+  *   Divide the data to train and validation by cutoff value (weekly) (function : testcutoff())
+  *   A continuous standard scaler is applied to train data 
   *   The data is then split by couple of (x,y) (function : createXY()
   *   An exponential smoothing is applied to (x) (function : toDataLoader())
   *   All couples (x,y) are packed into a torch.Dataloader (function : toDataLoader())
@@ -24,3 +24,5 @@ Each chunk will have their own training information such that model checkpoint, 
 ### QarnotDataResult.ipynb
 
 Notebook to evaluate trained model. The same procedure in QarnotScript to get the validation data for each chunk.
+
+Some dependencies : tsmoothie, networkx, 
