@@ -25,4 +25,4 @@ Each chunk will have their own training information such that model checkpoint, 
 
 Notebook to evaluate trained model. The same procedure in QarnotScript to get the validation data for each chunk.
 
-Some dependencies : tsmoothie, networkx, 
+Some external packages : tsmoothie, networkx, river.
