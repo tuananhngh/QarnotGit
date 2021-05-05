@@ -23,6 +23,6 @@ Each chunk will have their own training information such that model checkpoint, 
 
 ### QarnotDataResult.ipynb
 
-Notebook to evaluate trained model. The same procedure in QarnotScript to get the validation data for each chunk.
+Notebook to evaluate trained model. The same procedure in QarnotScript is used to get the validation data for each chunk.
 
 Some external packages : tsmoothie, networkx, river.
