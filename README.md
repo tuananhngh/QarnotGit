@@ -6,7 +6,7 @@ Feature "light" is interpolated to get rid of NaN. Some instances are deleted in
 
 ### QarnotScript.py
 The training procedure is as follow : 
-* Data is fed to model by chunk's orders
+* Data is fed to model by chunk's order
 * For each chunk :
   *   Divide the data by to train and validation by cutoff value (weekly) (function : testcutoff())
   *   A standard scaler is applied to train data 
