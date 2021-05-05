@@ -8,10 +8,10 @@ Feature "light" is interpolated to get rid of NaN. Some instances are deleted in
 The training procedure is as follow : 
 * Data is fed to model by chunk's orders
 * For each chunk :
-*   Divide the data by to train and validation by cutoff value (weekly) (function : testcutoff())
-*   A standard scaler is applied to train data 
-*   The data is then split to couple of (x,y) (function : createXY()
-*   An exponential smoothing is applied to (x) (function : toDataLoader())
-*   All couple (x,y) is packed into a torch.Dataloader (function : toDataLoader())
+  *   Divide the data by to train and validation by cutoff value (weekly) (function : testcutoff())
+  *   A standard scaler is applied to train data 
+  *   The data is then split to couple of (x,y) (function : createXY()
+  *   An exponential smoothing is applied to (x) (function : toDataLoader())
+  *   All couple (x,y) is packed into a torch.Dataloader (function : toDataLoader())
 
 
