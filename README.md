@@ -10,8 +10,17 @@ The training procedure is as follow :
 * For each chunk :
   *   Divide the data by to train and validation by cutoff value (weekly) (function : testcutoff())
   *   A standard scaler is applied to train data 
-  *   The data is then split to couple of (x,y) (function : createXY()
+  *   The data is then split by couple of (x,y) (function : createXY()
   *   An exponential smoothing is applied to (x) (function : toDataLoader())
-  *   All couple (x,y) is packed into a torch.Dataloader (function : toDataLoader())
+  *   All couples (x,y) are packed into a torch.Dataloader (function : toDataLoader())
 
+Some parameters to be specified :
+* chunk_checkpts : Load the last training checkpts. For the first run, any integer value is accepted, continuous_training must be set to False.
+* chunk_tosave : save the trained result to the folder according the trained chunk. For example 1th-chunk is trained, then the saved folder will be 1Chunk 
+* continuous_training : True or False
 
+Each chunk will have their training information such that model checkpoint, loss value, model weight, etc ...
+
+### QarnotDataResult.ipynb
+
+Notebook to evaluate trained model. The same procedure in QarnotScript to get the validation data for each chunk.
