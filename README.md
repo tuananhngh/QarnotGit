@@ -19,7 +19,7 @@ Some parameters to be specified :
 * chunk_tosave : save the trained result to the folder according the trained chunk. For example 1th-chunk is trained, then the saved folder will be 1Chunk 
 * continuous_training : True or False
 
-Each chunk will have their training information such that model checkpoint, loss value, model weight, etc ...
+Each chunk will have their own training information such that model checkpoint, loss value, model weight, etc ...
 
 ### QarnotDataResult.ipynb
 
